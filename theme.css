@@ -411,10 +411,6 @@ i.fa-thumbs-down:before {
   color: #ddd;
 }
 
-span.badge-extra.text-red {
-  color: #ff0039 !important;
-}
-
 .text-center > .label-success {
   background-color: #222;
 }
