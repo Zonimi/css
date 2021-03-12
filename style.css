@@ -1,3 +1,7 @@
+* {
+    text-size: 50px !important;
+}
+
 .btn-danger, .btn-primary, .label-primary {
     background-color: #fff !important;
     background-image: none;
