@@ -1,3 +1,4 @@
-element.style {
-    color: #101010 !important;
+.btn-danger, .btn-primary, .label-primary {
+    background-color: var(--color-purple) !important;
+    background-image: none;
 }
