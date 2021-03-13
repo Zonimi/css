@@ -656,6 +656,10 @@ tr.success > td {
   color: #3fb618;
 }
 
+.tab-pane.fade.active.in span.badge-extra.text-green.text-bold {
+  color: #ddd;
+}
+
 .table td > span.badge-extra.text-red.text-bold {
   color: #ff0039;
 }
@@ -777,19 +781,23 @@ tr.success > td {
   background-color: #181818;
 }
 
-.block .table-responsive > .table tr span.badge-extra.text-red {
+.block > .table-responsive > .table tr span.badge-extra.text-red {
   color: #ff0039 !important;
 }
 
-.block .table-responsive > .table tr span.badge-extra.text-orange {
+.block > .table-responsive > .table tr span.badge-extra.text-orange {
   color: #ffb800 !important;
 }
 
-.block .table-responsive > .table tr span.badge-extra.text-blue {
+.block > .table-responsive > .table tr span.text-green {
+  color: #3fb618 !important;
+}
+
+.block > .table-responsive > .table tr span.badge-extra.text-blue {
   color: #ff7518 !important;
 }
 
-.block .table-responsive > .table tr span.badge-user.group-member {
+.block > .table-responsive > .table tr span.badge-user.group-member {
   color: #ddd;
 }
 
