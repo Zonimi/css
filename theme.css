@@ -1081,3 +1081,7 @@ a[href*='/close'] {
 .fas.fa-envelope.text-info {
   color: var(--color-light-blue);
 }
+
+.fas.fa-gift.text-info {
+  color: var(--color-light-blue);
+}
