@@ -1087,3 +1087,8 @@ a[href*='/close'] {
 .fas.fa-gift.text-info {
   color: var(--color-light-blue);
 }
+
+.fa-discord::before {
+  color: var(--color-blue);
+  text-shadow: 0 0 15px var(--color-blue);
+}
