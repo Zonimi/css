@@ -1048,3 +1048,36 @@ label.col-sm-1.label.label-default {
 .card.is-torrent i.fa-check.text-orange {
   color: #2780e3;
 }
+
+.profil {
+  background: #181818;
+}
+
+div.head {
+  background-color: #222222;
+}
+
+button#quote.btn {
+  background-color: #222 !important;
+}
+
+button#quote.btn:hover {
+  background-color: var(--color-light-blue) !important;
+}
+
+.post-signature {
+  background-color: #222;
+  border-top: 2px dashed #222 !important;
+}
+
+a[href*='/close'] {
+  background-color: #222222 !important;
+}
+
+.icon-dislike.fas.fa-thumbs-down.fa-2x {
+  color: #ff0039;
+}
+
+.fas.fa-envelope.text-info {
+  color: var(--color-light-blue);
+}
