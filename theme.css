@@ -513,7 +513,8 @@ span.badge-extra > i[data-original-title='Comentários'] {
   color: #2780e3;
 }
 
-span.badge-extra > i[data-original-title='Ficha de Freeleech'] {
+span.badge-extra > i[data-original-title='Ficha de Freeleech'],
+span.badge-extra > i[data-original-title*='torrent.freeleech'] {
   color: #c4ea08;
 }
 
@@ -549,7 +550,8 @@ span.badge-extra > i[data-original-title='Gênero'] {
   color: #676767;
 }
 
-span.badge-extra > i[data-original-title='Altas Velocidades'] {
+span.badge-extra > i[data-original-title='Altas Velocidades'],
+span.badge-extra > i[data-original-title*='common.high-speeds'] {
   color: #8b998a;
 }
 
