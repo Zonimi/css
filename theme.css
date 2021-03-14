@@ -472,6 +472,7 @@ thead {
 
 #l-footer {
   background-color: #181818;
+  min-height: 200px;
 }
 
 #l-footer a {
@@ -1029,6 +1030,10 @@ i.icon-dislike.fas.fa-thumbs-down.fa-2x {
   color: #ff0039;
 }
 
+#result > .table-responsive .table i.fas.fa-hand-paper {
+  color: #ffb800;
+}
+
 #result > .table-responsive .table i.fas.fa-check-circle {
   color: #3fb618;
 }
@@ -1085,4 +1090,52 @@ ul.list-inline .fas.fa-check-square {
 
 .show-trailer a {
   color: #ddd;
+}
+
+.block > a.btn.btn {
+  background-color: #181818;
+}
+
+#autotmdb {
+  background-color: #181818;
+}
+
+#autoimdb {
+  background-color: #181818;
+}
+
+#autotvdb {
+  background-color: #181818;
+}
+
+input[name='mal'] {
+  background-color: #181818;
+}
+
+input[name='igdb'] {
+  background-color: #181818;
+}
+
+input[name='bounty'] {
+  background-color: #181818;
+}
+
+button[type='submit'] {
+  background-color: #181818;
+}
+
+input[type='text'].form-control {
+  background-color: #181818;
+}
+
+.container-fluid.p-0.some-padding {
+  background-color: #222222;
+}
+
+.text-primary {
+  color: var(--color-blue);
+}
+
+.fas.fa-coins.text-gold {
+  color: var(--color-blue);
 }
