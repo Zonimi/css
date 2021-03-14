@@ -513,6 +513,10 @@ span.badge-extra > i[data-original-title='Comentários'] {
   color: #2780e3;
 }
 
+span.badge-extra > i[data-original-title='Ficha de Freeleech'] {
+  color: #c4ea08;
+}
+
 span.badge-extra > i[data-original-title='Dual Áudio'],
 span.badge-extra > i[data-original-title*='torrent.stream-optimized'] {
   color: #e91ee8;
@@ -670,11 +674,10 @@ tr.success > td {
   background-color: #181818 !important;
 }
 
-a[href*='themoviedb'] {
-  color: #ddd;
-}
-
-a[href*='imdb'] {
+a[href*='themoviedb'],
+a[href*='imdb'],
+a[href*='thetvdb'],
+a[href*='myanimelist'] {
   color: #ddd;
 }
 
@@ -696,7 +699,7 @@ table > tbody > tr > td a[href*='/peers'] span.text-red {
 }
 
 table > tbody > tr > td a[href*='/history'] span.text-orange {
-  color: #2780e3;
+  color: #2780e3 !important;
 }
 
 .table.table-condensed.table-bordered.table-striped.table-hover > thead > tr > th {
@@ -782,15 +785,36 @@ table.table.table-condensed.table-striped.table-bordered
   color: #0fd14b;
 }
 
-.fade
-  > table.table.table-condensed.table-striped.table-bordered
+#newtorrents
+  table.table.table-condensed.table-striped.table-bordered
   > tbody
   > tr
   > td
-  span.badge-extra.text-green.text-bold {
-  color: #ddd;
-}
-
+  span.badge-extra.text-green.text-bold,
+#topseeded
+  table.table.table-condensed.table-striped.table-bordered
+  > tbody
+  > tr
+  > td
+  span.badge-extra.text-green.text-bold,
+#topleeched
+  table.table.table-condensed.table-striped.table-bordered
+  > tbody
+  > tr
+  > td
+  span.badge-extra.text-green.text-bold,
+#dyingtorrents
+  table.table.table-condensed.table-striped.table-bordered
+  > tbody
+  > tr
+  > td
+  span.badge-extra.text-green.text-bold,
+#deadtorrents
+  table.table.table-condensed.table-striped.table-bordered
+  > tbody
+  > tr
+  > td
+  span.badge-extra.text-green.text-bold,
 #facetedSearch
   table.table.table-condensed.table-striped.table-bordered
   > tbody
