@@ -420,7 +420,7 @@ th {
 }
 
 table > tbody > tr {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0);
+  border-bottom: 1px dotted rgba(44, 43, 43, 0.3);
 }
 
 a[href*='forums/topics'] {
@@ -713,7 +713,7 @@ table > tbody > tr > td a[href*='/history'] span.text-orange {
 }
 
 .table-responsive > .text-center {
-  background-color: #181818;
+  background-color: #22222;
   overflow-x: hidden !important;
 }
 
@@ -1091,4 +1091,40 @@ a[href*='/close'] {
 .fa-discord::before {
   color: var(--color-blue);
   text-shadow: 0 0 15px var(--color-blue);
+}
+
+.badge-extra a[href*='/peers'],
+.badge-extra a[href*='/history'] {
+  color: #ddd;
+}
+
+.badge-extra a[href*='/peers'],
+.badge-extra a[href*='/history'] {
+  color: #ddd;
+}
+
+.tab-content a.text-bold {
+  color: #ddd;
+}
+
+.badge-extra a[href*='/users'] {
+  color: #ddd !important;
+}
+
+.fas.fa-comment {
+  color: #2780e3;
+}
+
+.fas.fa-play.text-red {
+  color: #e91ee8;
+}
+
+.badge-extra .fas.fa-upload {
+  color: #0fd14b;
+}
+
+.panel-body,
+.table-striped > tbody > tr,
+.table > tbody > tr.info > td {
+  background-color: #141414;
 }
