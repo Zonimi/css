@@ -416,11 +416,11 @@ th {
 }
 
 #frame .content .messages ul li {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
 table > tbody > tr {
-  border-bottom: 1px dotted rgba(44, 43, 43, 0.3);
+  border-bottom: 2px solid rgba(44, 43, 43, 0.3);
 }
 
 a[href*='forums/topics'] {
@@ -1127,4 +1127,8 @@ a[href*='/close'] {
 .table-striped > tbody > tr,
 .table > tbody > tr.info > td {
   background-color: #141414;
+}
+
+.progress {
+  background-color: #222222;
 }
