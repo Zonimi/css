@@ -588,7 +588,7 @@ pre {
 }
 
 td div.panel-body {
-  background-color: #222222 !important;
+  background-color: #202020 !important;
 }
 
 .badge-extra a {
@@ -692,4 +692,20 @@ a[href*='thetvdb'] {
 
 div.stats {
   background: #181818;
+}
+
+.text-center span.badge-user {
+  background-color: #181818 !important;
+}
+
+.col-md-12.profile-footer {
+  background-color: #181818 !important;
+}
+
+.col-md-6 a {
+  background-color: #262626 !important;
+}
+
+.nav.nav-tabs.mb-5 a {
+  background-color: #262626;
 }
