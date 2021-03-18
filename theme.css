@@ -468,7 +468,7 @@ ul.nav.nav-tabs.no-border.mb-0 {
   border-radius: 3px;
 }
 
-i.has-tooltip {
+i.fa-robot.has-tooltip {
   color: var(--color-blue) !important;
 }
 
@@ -568,8 +568,8 @@ tr .badge-extra a[href*='/history'] {
 
 .page-content code,
 pre {
-  background-color: #181818 !important;
-  border: 2px solid #282828 !important;
+  background-color: #181818;
+  border: 2px solid #282828;
 }
 
 .list-group-item,
