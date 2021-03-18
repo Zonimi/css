@@ -1,7 +1,11 @@
 /*
+
 2014 material design colors from https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+
 Create a stylesheet that sets the following custom properties, and then imports this theme.
+
 For example dark blue,
+
 :root {
     --color-light-blue: #64B5F6;	  300
     --color-light-green: #64B5F6;	  300
@@ -20,6 +24,7 @@ For example dark blue,
     
     --color-dark-blue: #181818;
     --color-dark-red: #181818;
+
     --movie-overlay: radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 1) 5.46%, rgba(21, 101, 192, 0.46));    800
     --background-pipe: url("../../img/pipes/blue.png");
     --gradient-background: radial-gradient(at 30% top, #072e46 0%, #081c24 70%);
@@ -27,29 +32,29 @@ For example dark blue,
 */
 
 body {
-  background-color: #181818;
+  background-color: var(--color-dark-blue);
 }
 
 .btn-primary,
 .btn-danger,
 .label-primary {
-  background-color: #222222;
+  background-color: #262626;
   background-image: none;
 }
 
 .btn-info,
 .label-info {
-  background-color: #222222;
+  background-color: var(--color-magenta);
   background-image: none;
 }
 
 .btn-success {
-  background-color: #222222;
+  background-color: var(--color-blue);
   background-image: none;
 }
 
 .btn-warning {
-  background-color: #222222;
+  background-color: var(--color-blue);
   background-image: none;
 }
 
@@ -63,15 +68,6 @@ body {
   background-image: none;
 }
 
-.btn:active i,
-.btn:hover i,
-.btn:focus i,
-.btn:active:hover i,
-.btn:active:focus i,
-.btn:active:hover:focus i {
-  color: #fff !important;
-}
-
 #hoeapp-wrapper,
 #main-content,
 .inner-content {
@@ -79,22 +75,20 @@ body {
 }
 
 .hoe-right-header[hoe-color-type='header-bg5'] {
-  background: #181818;
+  background: #141414;
 }
 
 #hoeapp-container[hoe-color-type='lpanel-bg5'].hoe-minimized-lpanel #hoe-left-panel {
-  background: #181818;
+  background: #141414;
 }
 .ratio-bar {
-  background-color: #181818;
+  background-color: #141414;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
 }
-
-.badge-user {
-  background-color: #222222;
-}
-
 .ratio-bar .badge-user {
-  background-color: #222222;
+  background-color: #262626;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 .nav-tabs > #active {
@@ -119,7 +113,7 @@ body {
 #hoeapp-container[hoe-color-type='lpanel-bg5'] #hoe-left-panel,
 #hoeapp-container[hoe-color-type='lpanel-bg5'] #hoe-left-panel .panel-list > li > a,
 .hoe-right-header .hoe-rheader-submenu > .dropdown-menu > li > a {
-  background: #181818;
+  background: #141414;
 }
 
 .hoe-right-header .hoe-rheader-submenu > .dropdown-menu > li > a:focus,
@@ -129,11 +123,11 @@ body {
 }
 
 #hoeapp-container[hoe-color-type='lpanel-bg5'] #hoe-left-panel .panel-list > li > a {
-  border-top: 1px solid #181818;
+  border-top: 1px solid #141414;
 }
 
 .text-green {
-  color: #0fd14b;
+  color: #54e38a;
 }
 
 .text-muted {
@@ -147,17 +141,18 @@ i.torrent-icon,
 
 .col-md-10 {
   background-color: #181818;
-  margin-top: 5px;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.4);
+  margin-top: 15px;
   padding-top: 10px;
+  border-radius: 10px;
 }
 
 .panel-chat > .panel-body > #frame > .content {
-  background-color: #181818;
+  background-color: #141414;
 }
 
 #l-footer {
   background-color: #141414;
-  min-height: 200px;
 }
 
 #l-footer a {
@@ -196,28 +191,28 @@ h6,
 }
 
 .progress-bar {
-  background-color: var(--color-magenta);
+  background-color: var(--color-blue);
   border-bottom: 4px solid var(--color-red) !important;
 }
 
 select,
 select option {
-  background-color: #2b2b2b !important;
+  background-color: #262626 !important;
 }
 
 .form-control {
-  background-color: #2b2b2b;
+  background-color: #262626;
   color: #fff;
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0px var(--color-light-blue);
-  border: 0px solid var(--color-light-blue);
+  box-shadow: none;
+  border: none;
 }
 
 .form-control > option {
-  background-color: #616161;
+  background-color: #262626;
 }
 
 .bbcode-code,
@@ -243,12 +238,6 @@ select option {
   color: #ddd;
 }
 
-.badge-extra {
-  border: 1px solid #282828;
-  border-radius: 3px;
-  background-color: #282828;
-}
-
 .text-bright {
   color: #fefefe;
 }
@@ -267,7 +256,7 @@ a.text-bright:hover {
 }
 
 .text-danger {
-  color: #996666;
+  color: #fff;
 }
 
 .alert-danger,
@@ -289,11 +278,7 @@ a.text-bright:hover {
 .btn-info,
 .panel-info,
 .panel-info > .panel-heading {
-  background-color: #181818 !important;
-}
-
-.alert-info {
-  border-color: #181818;
+  background-color: #262626 !important;
 }
 
 .alert {
@@ -311,20 +296,20 @@ a.text-bright:hover {
 }
 
 .panel-chat > .panel-heading > h4 {
-  color: #fff;
+  color: #ddd;
 }
 
 .panel-collapse > .panel-heading {
-  background-color: #1b1b1b !important;
+  background-color: #ddd !important;
 }
 
 .badge-user {
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 .container.box {
   background: #181818;
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.5) !imporant;
 }
 
 .list-inline {
@@ -344,10 +329,6 @@ a.text-bright:hover {
   background-image: var(--gradient-background);
 }
 
-div.item span {
-  color: #ddd !important;
-}
-
 div.header.silver div.inner_content,
 div.header.pink div.inner_content,
 div.header.purple div.inner_content,
@@ -362,24 +343,6 @@ div.header.red div.inner_content,
   background-image: var(--background-pipe) !important;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background: #181818;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-blue);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-blue);
-}
-
 /* history table restores */
 .table > tbody > tr > td.text-green {
   color: #0fd14b !important;
@@ -389,327 +352,203 @@ div.header.red div.inner_content,
   color: #ff0039 !important;
 }
 
-.nav-tabs > li > a,
-td,
-thead {
-  background-color: #222222;
+/* Custom */
+
+i.fa-arrow-down {
+  color: #ff617a !important;
 }
 
-.nav-tabs {
-  background-color: #181818;
+i.fa-sync-alt {
+  color: #68bdfa !important;
 }
 
-td,
-thead,
-th {
-  background-color: #181818;
+i.fa-exchange {
+  color: #9154e3 !important;
 }
 
-.panel-body,
-.table-striped > tbody > tr,
-.table > tbody > tr.info > td {
-  background-color: #181818;
+i.fa-star {
+  color: #e4fb5d !important;
+}
+
+i.fa-download {
+  color: #ff617a !important;
+}
+
+i.fa-exclamation-circle {
+  color: #d95204 !important;
+}
+
+i.fa-coins {
+  color: #f2be24 !important;
+}
+
+.badge-extra > i.fa-upload {
+  color: #0fd14b !important;
+}
+
+i.fa-heart {
+  color: #ff0039 !important;
+}
+
+.badge-extra > i.fa-comment {
+  color: #68bdfa !important;
+}
+
+i.fa-play {
+  color: #9154e3 !important;
+}
+
+i.fa-arrow-up {
+  color: #0fd14b !important;
+}
+
+i.fa-certificate {
+  color: #f2055c !important;
+}
+
+i.fa-thumbtack {
+  color: #cb5e38 !important;
+}
+
+i.fa-tachometer {
+  color: #9dfead !important;
 }
 
 .breadcrumb {
-  background-color: #181818;
+  background-color: #181818 !important;
+}
+
+div.messages {
+  background-color: #181818 !important;
+}
+
+ul.nav.nav-tabs.no-border.mb-0 {
+  background-color: #181818 !important;
+}
+
+#frameFooter {
+  color: #ddd !important;
+  background-color: #181818 !important;
+  border: none !important;
+}
+
+.wysibb,
+.wysibb-text,
+.wysibb-toolbar,
+.wysibb-toolbar-container {
+  color: #ddd;
+  border: none !important;
+  background-color: #212121 !important;
+  border-radius: 5px !important;
+}
+
+.wysibb-body {
+  background-color: #181818 !important;
+}
+
+.wysibb .sc {
+  border: none !important;
+}
+
+.wbb-list {
+  background-color: #181818 !important;
+  border: #none !important;
+}
+
+.button-right-small {
+  background-color: #181818 !important;
 }
 
 #frame .content .messages ul li {
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #222222 !important;
 }
 
-table > tbody > tr {
-  border-bottom: 2px solid rgba(44, 43, 43, 0.3);
+.badge-user.text-bold {
+  background-color: #262626 !important;
+  border-radius: 3px;
 }
 
-a[href*='forums/topics'] {
-  color: #ddd;
-}
-
-table > tbody > tr > td span.text-orange {
-  color: #ddd;
-}
-
-table > tbody > tr > td i.fas.fa-ribbon {
-  color: #ffb800;
-}
-
-table > tbody > tr > td span.text-green {
-  color: #0fd14b;
-}
-
-i.fas.fa-robot.has-tooltip {
-  color: var(--color-blue);
+i.has-tooltip {
+  color: var(--color-blue) !important;
 }
 
 a.has-tooltip {
   color: #ddd !important;
 }
 
-.panel-footer {
-  border: 1px solid #181818;
+.panel.panel-chat.shoutbox > .tab-content > .tab-pane tr a {
+  color: #ddd !important;
 }
 
-.list-group-item,
-.panel-footer {
-  background-color: #181818;
+.nav-tabs {
+  background-color: #181818 !important;
 }
 
-#topic-response,
-.wysibb-body {
-  background-color: #181818;
+ul.nav.nav-tabs.mb-5 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
-.wysibb,
-.wysibb-text,
-.wysibb-toolbar {
-  background-color: #222222;
-  color: #ddd;
+td,
+thead {
+  background-color: #181818 !important;
 }
 
-.wysibb {
-  border: 1px solid #181818 !important;
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+td,
+thead {
+  color: #ddd !important;
 }
 
-.wysibb-toolbar {
-  border-bottom: 0px solid #181818 !important;
+.tab-content td .badge-extra.text-bold {
+  color: #ddd !important;
+  background-color: #262626 !important;
+  border-color: #262626 !important;
 }
 
-#hoeapp-wrapper {
-  color: #aaa;
+span.label.label-success {
+  background-color: #262626 !important;
 }
 
-.wysibb-toolbar-container {
-  border-right: 5px solid #222222 !important;
+table > tbody > tr {
+  border-bottom: 1px solid #262626 !important;
 }
 
-table.table > tbody > tr > td span.label.label-success {
-  background-color: #282828;
-  color: #ddd;
+th {
+  background-color: #262626 !important;
 }
 
-table.table > tbody a[href*='digital/torrents'] {
-  color: #ddd;
+div.table-responsive > .table a[href*='/forums/topics/'] {
+  color: #ddd !important;
 }
 
-table.table > tbody a[href*='digital/users'] {
-  color: #ddd;
+.panel-body,
+.table-striped > tbody > tr,
+.table > tbody > tr.info > td {
+  background-color: #181818 !important;
 }
 
-span.badge-extra > i[data-original-title='Enviado por'] {
-  color: #0fd14b;
+.label-default {
+  background-color: #262626 !important;
 }
 
-span.badge-extra > i[data-original-title='Uploader'] {
-  color: #0fd14b;
+.text-info:hover {
+  color: var(--color-light-blue) !important;
 }
 
-span.badge-extra > i[data-original-title='Agradecimentos'] {
-  color: #ff0039;
-}
-
-span.badge-extra > i[data-original-title='Comentários'] {
-  color: #2780e3;
-}
-
-span.badge-extra > i[data-original-title='Ficha de Freeleech'],
-span.badge-extra > i[data-original-title*='torrent.freeleech'] {
-  color: #c4ea08;
-}
-
-span.badge-extra > i[data-original-title='Dual Áudio'],
-span.badge-extra > i[data-original-title*='torrent.stream-optimized'] {
-  color: #e91ee8;
-}
-
-span.badge-extra > i[data-original-title='Upload duplo'],
-span.badge-extra > i[data-original-title*='torrent.double-upload'] {
-  color: #d3b96a;
-}
-
-span.badge-extra > i[data-original-title='Free'] {
-  color: #ffb800;
-}
-
-span.badge-extra > i[data-original-title='Quente!'] {
-  color: #ff7518;
-}
-
-span.badge-extra > i[data-original-title='Fixado'],
-span.badge-extra > i[data-original-title*='torrent.sticky!'] {
-  color: #5bec43;
-}
-
-span.badge-extra > i[data-original-title='Destaque'],
-span.badge-extra > i[data-original-title*='torrent.featured'] {
-  color: #c4ea08;
-}
-
-span.badge-extra > i[data-original-title='Gênero'] {
-  color: #676767;
-}
-
-span.badge-extra > i[data-original-title='Altas Velocidades'],
-span.badge-extra > i[data-original-title*='common.high-speeds'] {
-  color: #8b998a;
-}
-
-button[data-original-title='Baixar'] {
-  color: var(--color-blue);
-}
-
-span[data-original-title='Bookmark Torrent'] button {
-  color: var(--color-blue);
-}
-
-td > span.badge-user > a[href*='digital/users'] {
-  color: var(--color-blue) !important;
-}
-
-div.container-fluid > ul.list-inline i.fas.fa-arrow-down.text-red {
-  color: #ff0039;
-}
-
-div.container-fluid > ul.list-inline i.fas.fa-sync-alt.text-blue {
-  color: #2780e3;
-}
-
-div.container-fluid li i.fas.fa-exclamation-circle.text-orange {
-  color: #fffb00;
-}
-
-div.container-fluid > ul.list-inline i.fas.fa-coins.text-gold {
-  color: #ffb800;
-}
-
-div.container-fluid > ul.list-inline i.fas.fa-exchange.text-orange {
-  color: #ad98c2;
-}
-
-div.container-fluid > ul.list-inline i.fas.fa-download.text-red {
-  color: #ff0039;
-}
-
-.panel > .nav-tabs > li.active > a {
-  color: #fff !important;
-}
-
-a[href='#newtorrents'] i {
-  color: #fffb00;
-}
-
-a[href='#topseeded'] i {
-  color: #0fd14b;
-}
-
-a[href='#topleeched'] i {
-  color: #ff0039;
-}
-
-a[href='#dyingtorrents'] i {
-  color: #ff0039;
-}
-
-i[data-original-title='Requer Reseed'] {
-  color: #ffb800 !important;
-}
-
-a[href='#deadtorrents'] i {
-  color: #ff0039;
-}
-
-#frame ul.nav.nav-tabs > li > a > i {
-  color: #fff;
-}
-
-.panel-heading .label.label-default {
-  background-color: #222222;
-}
-
-div.item .list-inline > .badge-extra.text-blue i.fa-database {
-  color: #fffb00;
-}
-
-div.item .list-inline > .badge-extra.text-blue i.fa-clock {
-  color: #ff7518;
-}
-
-div.item .list-inline > .badge-extra.text-green i.fa-arrow-up {
-  color: #0fd14b;
-}
-
-div.item .list-inline > .badge-extra.text-red i.fa-arrow-down {
-  color: #ff0039;
-}
-
-div.item .list-inline > .badge-extra.text-orange i.fa-check-square {
-  color: #2780e3;
-}
-
-div.item .list-inline span.badge-user.text-bold.text-pink {
-  color: var(--color-blue) !important;
-}
-
-.color-overlay {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(64, 65, 66, 0.404),
-    #212120 39.5%,
-    rgba(10, 10, 10, 0.89)
-  );
-  background-blend-mode: multiply;
+a:focus {
+  color: #ddd !important;
 }
 
 .block,
 .well {
-  background-color: rgba(30, 30, 30, 0.4);
+  background-color: #181818 !important;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3) !important;
 }
 
 tr.success > td {
   background-color: #181818 !important;
-}
-
-.block td {
-  background-color: #181818 !important;
-}
-
-a[href*='themoviedb'],
-a[href*='imdb'],
-a[href*='thetvdb'],
-a[href*='myanimelist'] {
-  color: #ddd;
-}
-
-table > tbody > tr > td a[href*='/peers'] span.text-green {
-  color: #0fd14b !important;
-}
-
-table > tbody > tr > td a[href*='/peers'] span.text-red {
-  color: #ff0039;
-}
-
-.table.table-condensed.table-bordered.table-striped
-  > tbody
-  tr
-  td
-  a[href*='/peers']
-  span.badge-extra.text-red.text-bold {
-  color: #ff0039;
-}
-
-table > tbody > tr > td a[href*='/history'] span.text-orange {
-  color: #2780e3 !important;
-}
-
-.table.table-condensed.table-bordered.table-striped.table-hover > thead > tr > th {
-  color: var(--color-blue);
-}
-
-.table.table-condensed.table-bordered.table-striped.table-hover > thead > tr > th i {
-  color: #ddd;
 }
 
 .table-responsive > .text-center {
@@ -717,418 +556,130 @@ table > tbody > tr > td a[href*='/history'] span.text-orange {
   overflow-x: hidden !important;
 }
 
-.table.table-condensed.table-bordered.table-striped > tbody > tr .btn i {
-  color: var(--color-blue);
+.btn i,
+.btn:hover {
+  color: #fff !important;
 }
 
-.table.table-condensed.table-bordered.table-striped
-  > tbody
-  tr
-  td
-  span.badge-user.text-bold.text-pink {
-  color: var(--color-blue);
-}
-
-.table.table-condensed.table-bordered.table-striped > tbody tr td i.fa-arrow-up {
-  color: #0fd14b;
-}
-
-.table.table-condensed.table-bordered.table-striped > tbody tr td i.fa-arrow-down {
-  color: #ff0039;
-}
-
-.table.table-condensed.table-bordered.table-striped > tbody tr td span.badge-extra.text-red {
-  color: #ff0039;
-}
-
-.table.table-condensed.table-bordered.table-striped > tbody tr td i.fa-check {
-  color: #2780e3;
+tr .badge-extra a[href*='/peers'],
+tr .badge-extra a[href*='/history'] {
+  color: #ddd !important;
 }
 
 .page-content code,
 pre {
-  background-color: #181818;
-  border: 1px solid #222222;
+  background-color: #181818 !important;
+  border: 2px solid #282828 !important;
 }
 
-a.disabled i {
+.list-group-item,
+.panel-footer {
+  background-color: #181818 !important;
+}
+
+.panel-footer {
+  border: 1px solid #262626 !important;
+}
+
+td div.panel-body {
+  background-color: #2222 !important;
+}
+
+.badge-extra a {
   color: #ddd !important;
 }
 
-#vue.table-responsive i.fa-download {
-  color: #0fd14b;
+.alert {
+  border: 3px solid #262626 !important;
 }
 
-#vue.table-responsive i.fa-file {
-  color: #a1d6fc;
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] {
+  background-color: rgba(255, 255, 255, 0.015) !important;
+  color: #ddd !important;
+  border-width: 0px !important;
 }
 
-#vue.table-responsive i.fa-heart {
-  color: #ff0039;
+.block td {
+  background-color: #181818 !important;
 }
 
-#vue.table-responsive i.fa-bookmark {
-  color: #ff7518;
+.tab-content > .tab-pane > .table .badge-extra {
+  border: 1px solid rgba(66, 70, 92, 0.3) !important;
+  background-color: #262626 !important;
+  border-radius: 3px !important;
+  color: #ddd !important;
 }
 
-#vue.table-responsive i.fa-list-ol {
-  color: #fffb00;
+.badge-extra {
+  background-color: #262626 !important;
+  border-radius: 3px !important;
+  border: 1px solid rgba(66, 70, 92, 0.3) !important;
 }
 
-a[href*='/torrent_feature'].btn.btn-xs i {
-  color: #fff !important;
+.badge-extra.text-red {
+  color: #ff0039 !important;
 }
 
-table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-green.text-bold {
-  color: #0fd14b;
+i.fa-times-circle {
+  color: #ff0039 !important;
 }
 
-#newtorrents
-  table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-green.text-bold,
-#topseeded
-  table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-green.text-bold,
-#topleeched
-  table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-green.text-bold,
-#dyingtorrents
-  table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-green.text-bold,
-#deadtorrents
-  table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-green.text-bold,
-#facetedSearch
-  table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-green.text-bold {
-  color: #ddd;
+i.fa-hand-paper {
+  color: #f2be24 !important;
 }
 
-.container-fluid
-  .block
-  > .table-responsive
-  table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-green.text-bold {
-  color: #ddd;
-}
-
-table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-red.text-bold {
-  color: #ff0039;
-}
-
-table.table.table-condensed.table-striped.table-bordered
-  > tbody
-  > tr
-  > td
-  span.badge-extra.text-orange.text-bold {
-  color: #ff7518;
-}
-
-.container > .block,
-.container > .well {
-  background-color: #181818;
-}
-
-.profile-footer {
-  background-color: #181818;
-}
-
-button[data-target='#pid_block'].btn.btn-xxs.btn-info {
-  background-color: #222222 !important;
-}
-
-.button-holder.some-padding .button-right-large span.text-red {
-  color: #ff0039;
-}
-
-.button-holder.some-padding .button-right-large i.fa-upload {
-  color: #0fd14b;
-}
-
-.button-holder.some-padding .button-right-large i.fa-download {
-  color: #ff0039;
-}
-
-.button-holder.some-padding .button-right-large i.fa-cloud-upload {
-  color: #0fd14b;
-}
-
-.button-holder.some-padding .button-right-large i.fa-cloud-download {
-  color: #ff0039;
-}
-
-span[data-original-title='Download Registrado'].text-red {
-  color: #aaa !important;
-}
-
-span[data-original-title='Upload Registrado'].text-green {
-  color: #aaa !important;
-}
-
-span[data-original-title='Download Verdadeiro'].text-blue {
-  color: #0fd14b !important;
-}
-
-span[data-original-title='Upload Verdadeiro'].text-blue {
-  color: #0fd14b !important;
-}
-
-span[data-original-title='Download Removido da Loja BON'].text-orange {
-  color: #ff7518 !important;
-}
-
-span[data-original-title='Upload Adicionado da Loja BON'].text-orange {
-  color: #ff7518 !important;
-}
-
-.block td > .list-inline.mb-0 .badge-extra span.text-green.text-bold {
-  color: var(--color-blue);
-}
-
-.block td > .list-inline.mb-0 .badge-extra span.text-pink.text-bold {
-  color: var(--color-blue);
-}
-
-td.text-right .some-padding .badge-user span.text-red.text-bold {
-  color: var(--color-blue);
-}
-
-a.text-info:hover {
-  color: var(--color-light-blue);
-}
-
-a:focus {
-  color: var(--color-light-blue);
-}
-
-#hoeapp-container[hoe-color-type='lpanel-bg5'].hoe-minimized-lpanel
-  #hoe-left-panel
-  .panel-list
-  > li.hoe-has-menu:focus
-  > a,
-#hoeapp-container[hoe-color-type='lpanel-bg5'].hoe-minimized-lpanel
-  #hoe-left-panel
-  .panel-list
-  > li.hoe-has-menu:hover
-  > a {
-  background: #222;
-}
-
-#hoeapp-container[hoe-color-type='lpanel-bg5']
-  #hoe-left-panel
-  .panel-list
-  li.hoe-has-menu
-  > ul.hoe-sub-menu
-  li
-  > a:focus,
-#hoeapp-container[hoe-color-type='lpanel-bg5']
-  #hoe-left-panel
-  .panel-list
-  li.hoe-has-menu
-  > ul.hoe-sub-menu
-  li
-  > a {
-  background: #222;
-}
-
-#hoeapp-container[hoe-color-type='lpanel-bg5']
-  #hoe-left-panel
-  .panel-list
-  li.hoe-has-menu
-  > ul.hoe-sub-menu
-  li
-  > a:focus,
-#hoeapp-container[hoe-color-type='lpanel-bg5']
-  #hoe-left-panel
-  .panel-list
-  li.hoe-has-menu
-  > ul.hoe-sub-menu
-  li
-  > a:hover {
-  background: #181818;
-}
-
-#hoeapp-container[hoe-color-type='lpanel-bg5'] #hoe-left-panel .panel-list > li.active > a {
-  background: #222;
-  border-top: 1px solid #1f1f2a;
-  color: #fff;
-}
-
-a[href='#30days'] i {
-  color: #ffb800;
-}
-
-div.stats {
-  background-color: #181818;
-}
-
-table form[action*='bonus/exchange'] > button.btn-exchange {
-  background-color: #222222 !important;
-}
-
-label.col-sm-1.label.label-default {
-  background-color: #222222;
-}
-
-.col-sm-10 .inline > span.fas.fa-times-circle.text-blue {
-  color: #ff0039;
-}
-
-.col-sm-10 .inline > span.fas.fa-hand-paper.text-blue {
-  color: #fffb00;
-}
-
-.col-sm-10 .inline > span.fas.fa-hand-paper.text-blue {
-  color: #fffb00;
-}
-
-.col-sm-10 .inline > span.fas.fa-question-circle.text-blue {
-  color: #ff7518;
-}
-
-.col-sm-10 .inline > span.fas.fa-check-circle.text-blue {
-  color: #0fd14b;
-}
-
-.table.table-condensed.table-bordered.table-striped > tbody > tr .btn i.fa-times-circle {
-  color: #ff0039;
-}
-
-.table.table-condensed.table-bordered.table-striped > tbody > tr .btn i.fa-check-circle {
-  color: #0fd14b;
-}
-
-.table.table-condensed.table-bordered.table-striped > tbody > tr .btn i.fa-hand-paper {
-  color: #fffb00;
-}
-
-.table.table-condensed.table-bordered.table-striped > tbody > tr .btn i.fa-question-circle {
-  color: #ff7518;
-}
-
-.card.is-torrent i.fa-arrow-down.text-red {
-  color: #ff0039;
-}
-
-.card.is-torrent i.fa-download {
-  color: #ff0039;
-}
-
-.card.is-torrent i.fa-copy {
-  color: #a1d6fc;
-}
-
-.card.is-torrent i.fa-check.text-orange {
-  color: #2780e3;
+.badge-user {
+  background-color: #262626 !important;
+  border-radius: 3px !important;
 }
 
 .profil {
-  background: #181818;
-}
-
-div.head {
-  background-color: #222222;
-}
-
-button#quote.btn {
-  background-color: #222 !important;
-}
-
-button#quote.btn:hover {
-  background-color: var(--color-light-blue) !important;
+  background-color: #181818 !important;
 }
 
 .post-signature {
-  background-color: #222;
-  border-top: 2px dashed #222 !important;
+  background-color: #262626 !important;
+  border-top: 2px solid #404040 !important;
 }
 
-a[href*='/close'] {
-  background-color: #222222 !important;
-}
-
-.icon-dislike.fas.fa-thumbs-down.fa-2x {
-  color: #ff0039;
-}
-
-.fas.fa-envelope.text-info {
-  color: var(--color-light-blue);
-}
-
-.fas.fa-gift.text-info {
-  color: var(--color-light-blue);
-}
-
-.fa-discord::before {
-  color: var(--color-blue);
-  text-shadow: 0 0 15px var(--color-blue);
-}
-
-.badge-extra a[href*='/peers'],
-.badge-extra a[href*='/history'] {
-  color: #ddd;
-}
-
-.badge-extra a[href*='/peers'],
-.badge-extra a[href*='/history'] {
-  color: #ddd;
-}
-
-.tab-content a.text-bold {
-  color: #ddd;
-}
-
-.badge-extra a[href*='/users'] {
+.some-padding {
   color: #ddd !important;
 }
 
-.fas.fa-comment {
-  color: #2780e3;
+.head {
+  background: #262626 repeat-x top !important;
 }
 
-.fas.fa-play.text-red {
-  color: #e91ee8;
+a[href*='themoviedb'],
+a[href*='imdb'],
+a[href*='thetvdb'] {
+  color: #ddd !important;
 }
 
-.badge-extra .fas.fa-upload {
-  color: #0fd14b;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.panel-body,
-.table-striped > tbody > tr,
-.table > tbody > tr.info > td {
-  background-color: #141414;
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #151515;
 }
 
-.progress {
-  background-color: #222222;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue);
+}
+
+.fa-discord::before {
+  color: var(--color-blue) !important;
+  text-shadow: 0 0 15px var(--color-blue) !important;
 }
