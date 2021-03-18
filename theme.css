@@ -349,7 +349,7 @@ div.header.red div.inner_content,
 }
 
 .table > tbody > tr > td.text-red {
-  color: #ff0039 !important;
+  color: #ff617a !important;
 }
 
 /* Custom */
@@ -387,7 +387,7 @@ i.fa-coins {
 }
 
 i.fa-heart {
-  color: #ff0039 !important;
+  color: #ff617a !important;
 }
 
 .badge-extra > i.fa-comment {
@@ -625,11 +625,11 @@ fieldset[disabled] {
 }
 
 .badge-extra.text-red {
-  color: #ff0039 !important;
+  color: #ff617a !important;
 }
 
 i.fa-times-circle {
-  color: #ff0039 !important;
+  color: #ff617a !important;
 }
 
 i.fa-hand-paper {
@@ -712,4 +712,44 @@ div.stats {
 
 i.fa-fire {
   color: #f0541b !important;
+}
+
+.text-red {
+  color: #ff617a !important;
+}
+
+.panel-body > details.label.label-primary {
+  background-color: #181818 !important;
+  border: 1px solid #353535 !important;
+}
+
+summary {
+  outline: none !important;
+  padding: 5px !important;
+}
+
+i.fa-tasks {
+  color: #fff !important;
+}
+
+.table-striped .info span.badge-user.text-bold.text-pink {
+  color: var(--color-blue) !important;
+}
+
+ul.comments-list li {
+  background: #222222 !important;
+  padding: 6px;
+}
+
+.pull-right {
+  float: right !important;
+  margin: 5px;
+}
+
+i.fa-pencil {
+  color: #808080 !important;
+}
+
+.img-avatar-48 {
+  border-radius: 100% !important;
 }
