@@ -691,7 +691,7 @@ a[href*='thetvdb'] {
 }
 
 div.stats {
-  background: #181818;
+  background: #181818 !important;
 }
 
 .text-center span.badge-user {
@@ -708,4 +708,8 @@ div.stats {
 
 .nav.nav-tabs.mb-5 a {
   background-color: #262626;
+}
+
+i.fa-fire {
+  color: #f0541b !important;
 }
