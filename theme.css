@@ -501,7 +501,13 @@ thead {
   color: #ddd !important;
 }
 
-.tab-content td .badge-extra.text-bold {
+.tab-pane td .badge-extra.text-bold.text-green {
+  color: #ddd !important;
+  background-color: #262626 !important;
+  border-color: #262626 !important;
+}
+
+.table-hover .badge-extra.text-bold.text-green {
   color: #ddd !important;
   background-color: #262626 !important;
   border-color: #262626 !important;
@@ -682,4 +688,8 @@ a[href*='thetvdb'] {
 .fa-discord::before {
   color: var(--color-blue) !important;
   text-shadow: 0 0 15px var(--color-blue) !important;
+}
+
+div.stats {
+  background: #181818;
 }
