@@ -300,7 +300,7 @@ a.text-bright:hover {
 }
 
 .panel-collapse > .panel-heading {
-  background-color: #ddd !important;
+  background-color: #282828 !important;
 }
 
 .badge-user {
@@ -309,7 +309,7 @@ a.text-bright:hover {
 
 .container.box {
   background: #181818;
-  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.5) !imporant;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.5) !important;
 }
 
 .list-inline {
@@ -452,7 +452,7 @@ ul.nav.nav-tabs.no-border.mb-0 {
 
 .wbb-list {
   background-color: #181818 !important;
-  border: #none !important;
+  border: none !important;
 }
 
 .button-right-small {
@@ -552,7 +552,7 @@ tr.success > td {
 }
 
 .table-responsive > .text-center {
-  background-color: #22222;
+  background-color: #222222;
   overflow-x: hidden !important;
 }
 
@@ -769,4 +769,13 @@ i.fa-pencil {
 .table > thead > tr > td.success,
 .table > thead > tr > th.success {
   background-color: #151515 !important;
+}
+
+i.fa-globe {
+  color: #ef782f !important;
+}
+
+div.decoda-code.text-black {
+  word-break: break-all;
+  max-width: 1200px;
 }
